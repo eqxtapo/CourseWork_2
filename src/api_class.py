@@ -18,7 +18,7 @@ class BaseAPI(ABC):
         pass
 
 
-class HeadHunterAPI(BaseAPI):
+class hh(BaseAPI):
     """
     Класс для работы с платформой hh.ru
     """
@@ -55,10 +55,3 @@ class HeadHunterAPI(BaseAPI):
         Возвращает список вакансий
         """
         return self.vacancies
-
-
-# if __name__ == "__main__":
-hh = HeadHunterAPI()
-hh.load_vacancies("Python")
-hh_vacancies = hh.get_vacancies()
-# print(hh_vacancies)
